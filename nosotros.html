@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nosotros — Agua Santa Expediciones</title>
+    <meta
+      name="description"
+      content="Historia, misión, visión y valores de Agua Santa Expediciones, agencia de turismo en Baños de Agua Santa."
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="nav-bar">
+        <a href="index.html" class="brand">
+          <img
+            src="images/logo.png"
+            alt="Logo de Agua Santa Expediciones"
+            width="200"
+          />
+          <span class="brand-text"
+            >Agua Santa<br />Expediciones<small
+              >BAÑOS · TUNGURAHUA · ECUADOR</small
+            ></span
+          >
+        </a>
+        <button
+          class="nav-toggle"
+          aria-expanded="false"
+          aria-controls="menu-principal"
+          onclick="
+            document.getElementById('menu-principal').classList.toggle('open');
+            this.setAttribute(
+              'aria-expanded',
+              this.getAttribute('aria-expanded') === 'true' ? 'false' : 'true',
+            );
+          "
+        >
+          ☰ Menú
+        </button>
+        <nav class="main-nav" id="menu-principal" aria-label="Menú principal">
+          <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="destinos.html">Lugares turísticos</a></li>
+            <li><a href="servicios.html">Servicios</a></li>
+            <li><a href="nosotros.html" aria-current="page">Nosotros</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <div class="page-banner">
+      <div class="container">
+        <h1>Nosotros</h1>
+        <p>
+          Una agencia nacida en Baños, hecha por gente que camina estas montañas
+          todos los días.
+        </p>
+      </div>
+    </div>
+
+    <main>
+      <section>
+        <div class="container about-grid">
+          <div>
+            <h2>Nuestra historia</h2>
+            <p>
+              Agua Santa Expediciones nació de una idea sencilla: nadie cuenta
+              mejor las cascadas y los senderos de Baños que quienes crecieron
+              subiendo a ellos. Empezamos como un pequeño grupo de guías de la
+              Ruta de las Cascadas que, cansados de ver a los visitantes pasar
+              de largo por rincones que ellos mismos conocían de memoria,
+              decidieron armar recorridos propios, con tiempos más humanos y
+              paradas que sí valen la pena.
+            </p>
+            <p>
+              Desde entonces trabajamos codo a codo con transportistas,
+              hospedajes familiares y artesanos de la melcocha del cantón Baños,
+              para que cada peso que deja un visitante se quede, en la medida de
+              lo posible, en la propia comunidad.
+            </p>
+
+            <h2 style="margin-top: 2.5rem">Por qué visitar Baños</h2>
+            <ul>
+              <li>
+                Es el único punto de Ecuador donde en una misma jornada se puede
+                ver un volcán activo, bañarse en aguas termales y asomarse a la
+                selva amazónica.
+              </li>
+              <li>
+                Concentra cerca de setenta cascadas en un radio corto, la
+                mayoría accesibles a pie o en bicicleta desde el centro de la
+                ciudad.
+              </li>
+              <li>
+                Tiene una oferta de turismo de aventura consolidada, con
+                operadores certificados para actividades como puenting,
+                canyoning y rafting.
+              </li>
+              <li>
+                Conserva tradiciones vivas, como la elaboración artesanal de la
+                melcocha, que se puede ver hacerse en plena calle.
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <div class="timeline">
+              <div>
+                <p class="year">Misión</p>
+                <p>
+                  Conectar a cada visitante con la naturaleza y la cultura de
+                  Baños de Agua Santa a través de experiencias seguras, bien
+                  guiadas y con impacto positivo para las familias del cantón.
+                </p>
+              </div>
+              <div>
+                <p class="year">Visión</p>
+                <p>
+                  Ser la agencia de referencia de Baños para quienes buscan un
+                  turismo de aventura responsable, reconocida por la calidad de
+                  sus guías y por trabajar de la mano con la comunidad local.
+                </p>
+              </div>
+              <div>
+                <p class="year">Valores</p>
+                <ul class="valores-list" style="margin-top: 0.8rem">
+                  <li>
+                    <strong>Seguridad primero:</strong> equipo certificado y
+                    guías capacitados en primeros auxilios.
+                  </li>
+                  <li>
+                    <strong>Respeto por la naturaleza:</strong> grupos pequeños
+                    y senderos ya habilitados.
+                  </li>
+                  <li>
+                    <strong>Cercanía local:</strong> trabajamos con proveedores
+                    del propio cantón.
+                  </li>
+                  <li>
+                    <strong>Honestidad:</strong> precios claros, sin sorpresas
+                    de último momento.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="alt">
+        <div class="container">
+          <div class="section-head">
+            <p class="kicker">MÁS SOBRE EL LUGAR</p>
+            <h2>Un vistazo a Baños de Agua Santa</h2>
+            <p>
+              El nombre del cantón viene de sus vertientes de agua caliente, a
+              las que se atribuyen propiedades curativas por su alto contenido
+              mineral. La ciudad es también un importante centro de
+              peregrinación católica, ligado a las apariciones marianas junto a
+              la cascada que hoy da nombre a las Termas de la Virgen. Con algo
+              más de 20.000 habitantes en todo el cantón, Baños combina la vida
+              de pueblo andino con una infraestructura turística pensada para
+              recibir visitantes durante todo el año.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <h4>Agua Santa Expediciones</h4>
+          <p>
+            Agencia de turismo local especializada en Baños de Agua Santa,
+            Tungurahua.
+          </p>
+        </div>
+        <div>
+          <h4>Explorar</h4>
+          <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="destinos.html">Lugares turísticos</a></li>
+            <li><a href="servicios.html">Servicios y paquetes</a></li>
+            <li><a href="contacto.html">Contacto y reservas</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contacto</h4>
+          <ul>
+            <li>Av. Amazonas y Espejo, Baños de Agua Santa</li>
+            <li>Tungurahua, Ecuador</li>
+            <li>info@aguasantaexpediciones.ec</li>
+            <li>+593 99 100 2200</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p style="margin: 0">
+          © 2026 Agua Santa Expediciones — Proyecto Universitario UTEQ.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

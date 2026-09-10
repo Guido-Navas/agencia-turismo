@@ -1,0 +1,261 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Agua Santa Expediciones — Turismo en Baños de Agua Santa</title>
+    <meta
+      name="description"
+      content="Agencia de turismo especializada en Baños de Agua Santa, Tungurahua: cascadas, aguas termales, aventura y el volcán Tungurahua."
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="nav-bar">
+        <a href="index.html" class="brand">
+          <img
+            src="images/logo.png"
+            alt="Logo de Agua Santa Expediciones"
+            width="200"
+          />
+          <span class="brand-text"
+            >Agua Santa<br />Expediciones<small
+              >BAÑOS · TUNGURAHUA · ECUADOR</small
+            ></span
+          >
+        </a>
+        <button
+          class="nav-toggle"
+          aria-expanded="false"
+          aria-controls="menu-principal"
+          onclick="
+            document.getElementById('menu-principal').classList.toggle('open');
+            this.setAttribute(
+              'aria-expanded',
+              this.getAttribute('aria-expanded') === 'true' ? 'false' : 'true',
+            );
+          "
+        >
+          ☰ Menú
+        </button>
+        <nav class="main-nav" id="menu-principal" aria-label="Menú principal">
+          <ul>
+            <li><a href="index.html" aria-current="page">Inicio</a></li>
+            <li><a href="destinos.html">Lugares turísticos</a></li>
+            <li><a href="servicios.html">Servicios</a></li>
+            <li><a href="nosotros.html">Nosotros</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" aria-label="Presentación">
+        <div class="hero-text">
+          <p class="hero-eyebrow-free">Baños de Agua Santa · Tungurahua</p>
+          <h1>Entre el volcán <span>y</span> la selva</h1>
+          <p class="hero-lead">
+            Somos una agencia local dedicada a mostrarte Baños de Agua Santa tal
+            como lo vive quien nació aquí: cascadas escondidas entre la neblina,
+            aguas termales que nacen del volcán Tungurahua y senderos que
+            descienden hasta las puertas de la Amazonía.
+          </p>
+          <div class="hero-ctas">
+            <a href="servicios.html" class="btn btn-primary"
+              >Ver paquetes turísticos</a
+            >
+            <a href="destinos.html" class="btn btn-outline"
+              >Explorar atractivos</a
+            >
+          </div>
+        </div>
+        <figure class="hero-media">
+          <img
+            src="images/hero.webp"
+            alt="Vista de Baños de Agua Santa con el volcán Tungurahua al fondo"
+          />
+          <figcaption>Baños vista desde las faldas del Tungurahua</figcaption>
+        </figure>
+      </section>
+
+      <span class="terrace-divider" aria-hidden="true"></span>
+
+      <section aria-label="Sobre el destino">
+        <div class="container">
+          <div class="section-head">
+            <p class="kicker">SOBRE EL DESTINO</p>
+            <h2>La Puerta de Entrada a la Amazonía</h2>
+            <p>
+              Baños de Agua Santa está a 1.820 metros de altura, en las faldas
+              del volcán Tungurahua, en la provincia que lleva su mismo nombre.
+              Es el último pedazo de sierra andina antes de que la carretera
+              empiece a descender hacia la selva amazónica, y por eso los
+              propios baneños la llaman «Pedacito de Cielo»: un lugar donde en
+              un mismo día se puede subir a un mirador nevado, bañarse en agua
+              termal y comer fruta amazónica recién cortada.
+            </p>
+            <p>
+              El cantón reúne cerca de setenta cascadas y varios complejos de
+              aguas termales alimentados por el calor del volcán, además de una
+              oferta consolidada de turismo de aventura: rafting en el río
+              Pastaza, canyoning, puenting, ciclismo por la Ruta de las Cascadas
+              y caminatas hacia miradores como la Casa del Árbol.
+            </p>
+          </div>
+
+          <div class="destacados-grid">
+            <article class="destacado-card">
+              <h3>Cascadas de cuento</h3>
+              <p>
+                El Pailón del Diablo, la Cascada Manto de la Novia y decenas de
+                saltos de agua más se reparten a lo largo de la Ruta de las
+                Cascadas, entre Baños y Río Verde.
+              </p>
+            </article>
+            <article class="destacado-card">
+              <h3>Agua que nace del volcán</h3>
+              <p>
+                Las piscinas de aguas termales, encabezadas por las históricas
+                Termas de la Virgen, se calientan con el mismo calor que
+                alimenta al Tungurahua.
+              </p>
+            </article>
+            <article class="destacado-card">
+              <h3>Adrenalina y altura</h3>
+              <p>
+                Columpios sobre el abismo, tarabitas, canopy y rutas en
+                bicicleta convierten a Baños en la capital ecuatoriana del
+                turismo de aventura.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="alt" aria-label="Atractivos destacados">
+        <div class="container">
+          <div class="section-head">
+            <p class="kicker">NO TE LOS PUEDES PERDER</p>
+            <h2>Atractivos que definen a Baños</h2>
+            <p>
+              Una muestra de lo que te espera. La lista completa, con ubicación
+              y actividad recomendada, está en la sección de lugares turísticos.
+            </p>
+          </div>
+
+          <div class="atractivos-grid">
+            <article class="atractivo-card">
+              <figure>
+                <img
+                  src="images/destino1.webp"
+                  alt="Cascada Pailón del Diablo, Baños de Agua Santa"
+                />
+              </figure>
+              <div class="card-body">
+                <h3>Pailón del Diablo</h3>
+                <p>
+                  La cascada más famosa del Ecuador, con casi 80 metros de caída
+                  sobre el río Verde.
+                </p>
+              </div>
+            </article>
+            <article class="atractivo-card">
+              <figure>
+                <img
+                  src="images/destino2.webp"
+                  alt="Columpio del Fin del Mundo en la Casa del Árbol, Baños"
+                />
+              </figure>
+              <div class="card-body">
+                <h3>Casa del Árbol</h3>
+                <p>
+                  El famoso «columpio del fin del mundo», con el Tungurahua como
+                  telón de fondo.
+                </p>
+              </div>
+            </article>
+            <article class="atractivo-card">
+              <figure>
+                <img
+                  src="images/destino3.webp"
+                  alt="Termas de la Virgen, piscinas de aguas termales en Baños"
+                />
+              </figure>
+              <div class="card-body">
+                <h3>Termas de la Virgen</h3>
+                <p>
+                  Piscinas de aguas termales al pie de una cascada, en pleno
+                  centro de la ciudad.
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section aria-label="Llamado a la acción">
+        <div class="container">
+          <div
+            class="section-head"
+            style="
+              max-width: 100%;
+              display: flex;
+              flex-wrap: wrap;
+              align-items: center;
+              justify-content: space-between;
+              gap: 1.5rem;
+            "
+          >
+            <div style="max-width: 56ch">
+              <h2 style="margin-bottom: 0.4rem">¿Listo para conocer Baños?</h2>
+              <p style="margin-bottom: 0">
+                Diseñamos tu recorrido con guías locales, transporte y las
+                entradas a cada atractivo. Escríbenos y arma tu paquete a la
+                medida.
+              </p>
+            </div>
+            <a href="contacto.html" class="btn btn-primary">Reservar ahora</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <h4>Agua Santa Expediciones</h4>
+          <p>
+            Agencia de turismo local especializada en Baños de Agua Santa,
+            Tungurahua. Trabajamos con guías de la zona y proveedores que
+            conocen cada sendero, cascada y piscina termal del cantón.
+          </p>
+        </div>
+        <div>
+          <h4>Explorar</h4>
+          <ul>
+            <li><a href="destinos.html">Lugares turísticos</a></li>
+            <li><a href="servicios.html">Servicios y paquetes</a></li>
+            <li><a href="nosotros.html">Nosotros</a></li>
+            <li><a href="contacto.html">Contacto y reservas</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contacto</h4>
+          <ul>
+            <li>Av. Amazonas y Espejo, Baños de Agua Santa</li>
+            <li>Tungurahua, Ecuador</li>
+            <li>info@aguasantaexpediciones.ec</li>
+            <li>+593 99 100 2200</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p style="margin: 0">
+          © 2026 Agua Santa Expediciones — Proyecto Universitario UTEQ.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

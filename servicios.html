@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Servicios y paquetes turísticos — Agua Santa Expediciones</title>
+    <meta
+      name="description"
+      content="Tours y paquetes turísticos en Baños de Agua Santa: cascadas, aventura, gastronomía, cultura y fines de semana completos."
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="nav-bar">
+        <a href="index.html" class="brand">
+          <img
+            src="images/logo.png"
+            alt="Logo de Agua Santa Expediciones"
+            width="200"
+          />
+          <span class="brand-text"
+            >Agua Santa<br />Expediciones<small
+              >BAÑOS · TUNGURAHUA · ECUADOR</small
+            ></span
+          >
+        </a>
+        <button
+          class="nav-toggle"
+          aria-expanded="false"
+          aria-controls="menu-principal"
+          onclick="
+            document.getElementById('menu-principal').classList.toggle('open');
+            this.setAttribute(
+              'aria-expanded',
+              this.getAttribute('aria-expanded') === 'true' ? 'false' : 'true',
+            );
+          "
+        >
+          ☰ Menú
+        </button>
+        <nav class="main-nav" id="menu-principal" aria-label="Menú principal">
+          <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="destinos.html">Lugares turísticos</a></li>
+            <li><a href="servicios.html" aria-current="page">Servicios</a></li>
+            <li><a href="nosotros.html">Nosotros</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <div class="page-banner">
+      <div class="container">
+        <h1>Servicios y paquetes turísticos</h1>
+        <p>
+          Tours pensados para distintos ritmos de viaje: desde una tarde de
+          cascadas hasta un fin de semana completo de aventura y descanso.
+        </p>
+      </div>
+    </div>
+
+    <main>
+      <section>
+        <div class="container">
+          <div class="paquetes-grid">
+            <article class="paquete-card">
+              <span class="paquete-tag">Naturaleza</span>
+              <h3>Tour Ruta de las Cascadas</h3>
+              <p>
+                Recorrido en bicicleta o chiva por la vía Baños–Río Verde, con
+                paradas en la Cascada Manto de la Novia, tarabitas y el Pailón
+                del Diablo.
+              </p>
+              <p class="paquete-precio">$18 <span>por persona</span></p>
+            </article>
+
+            <article class="paquete-card">
+              <span class="paquete-tag">Gastronomía</span>
+              <h3>Tour gastronómico y melcocha</h3>
+              <p>
+                Visita a talleres artesanales de melcocha en la calle Ambato,
+                mercado central y una parada para probar el cuy y el caldo de
+                gallina criolla.
+              </p>
+              <p class="paquete-precio">$15 <span>por persona</span></p>
+            </article>
+
+            <article class="paquete-card">
+              <span class="paquete-tag">Cultura</span>
+              <h3>Tour cultural e histórico</h3>
+              <p>
+                Recorrido a pie por la Basílica de Nuestra Señora del Rosario de
+                Agua Santa, el centro histórico y los relatos de las apariciones
+                marianas junto a la cascada de La Virgen.
+              </p>
+              <p class="paquete-precio">$12 <span>por persona</span></p>
+            </article>
+
+            <article class="paquete-card">
+              <span class="paquete-tag">Aventura</span>
+              <h3>Tour de aventura extrema</h3>
+              <p>
+                Puenting, canyoning y ciclismo de montaña en un solo día, con
+                equipo certificado y guías especializados en deportes de riesgo.
+              </p>
+              <p class="paquete-precio">$45 <span>por persona</span></p>
+            </article>
+
+            <article class="paquete-card">
+              <span class="paquete-tag">Fin de semana</span>
+              <h3>Paquete de fin de semana en Baños</h3>
+              <p>
+                Dos noches de hospedaje, Ruta de las Cascadas, entrada a la Casa
+                del Árbol y una tarde libre en las Termas de la Virgen.
+              </p>
+              <p class="paquete-precio">$120 <span>por persona</span></p>
+            </article>
+
+            <article class="paquete-card">
+              <span class="paquete-tag">Un día</span>
+              <h3>Excursión de un día: volcán y termas</h3>
+              <p>
+                Mirador de la Casa del Árbol por la mañana y baño termal
+                relajante por la tarde, con transporte incluido desde el centro
+                de Baños.
+              </p>
+              <p class="paquete-precio">$28 <span>por persona</span></p>
+            </article>
+          </div>
+
+          <p class="form-note" style="margin-top: 2.5rem">
+            Los precios son referenciales, no incluyen alimentación salvo que se
+            indique, y pueden variar según temporada y número de personas.
+            Escríbenos en la sección de
+            <a href="contacto.html">contacto</a> para armar un paquete a tu
+            medida.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <h4>Agua Santa Expediciones</h4>
+          <p>
+            Agencia de turismo local especializada en Baños de Agua Santa,
+            Tungurahua.
+          </p>
+        </div>
+        <div>
+          <h4>Explorar</h4>
+          <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="destinos.html">Lugares turísticos</a></li>
+            <li><a href="nosotros.html">Nosotros</a></li>
+            <li><a href="contacto.html">Contacto y reservas</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contacto</h4>
+          <ul>
+            <li>Av. Amazonas y Espejo, Baños de Agua Santa</li>
+            <li>Tungurahua, Ecuador</li>
+            <li>info@aguasantaexpediciones.ec</li>
+            <li>+593 99 100 2200</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p style="margin: 0">
+          © 2026 Agua Santa Expediciones — Proyecto Universitario UTEQ.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

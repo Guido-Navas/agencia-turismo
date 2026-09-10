@@ -1,0 +1,250 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contacto y reservas — Agua Santa Expediciones</title>
+    <meta
+      name="description"
+      content="Contáctanos para reservar tu tour en Baños de Agua Santa. Formulario de reserva y datos de contacto de Agua Santa Expediciones."
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="nav-bar">
+        <a href="index.html" class="brand">
+          <img
+            src="images/logo.png"
+            alt="Logo de Agua Santa Expediciones"
+            width="200"
+          />
+          <span class="brand-text"
+            >Agua Santa<br />Expediciones<small
+              >BAÑOS · TUNGURAHUA · ECUADOR</small
+            ></span
+          >
+        </a>
+        <button
+          class="nav-toggle"
+          aria-expanded="false"
+          aria-controls="menu-principal"
+          onclick="
+            document.getElementById('menu-principal').classList.toggle('open');
+            this.setAttribute(
+              'aria-expanded',
+              this.getAttribute('aria-expanded') === 'true' ? 'false' : 'true',
+            );
+          "
+        >
+          ☰ Menú
+        </button>
+        <nav class="main-nav" id="menu-principal" aria-label="Menú principal">
+          <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="destinos.html">Lugares turísticos</a></li>
+            <li><a href="servicios.html">Servicios</a></li>
+            <li><a href="nosotros.html">Nosotros</a></li>
+            <li><a href="contacto.html" aria-current="page">Contacto</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <div class="page-banner">
+      <div class="container">
+        <h1>Contacto y reservas</h1>
+        <p>
+          Cuéntanos qué te gustaría hacer en Baños y te respondemos con opciones
+          y disponibilidad.
+        </p>
+      </div>
+    </div>
+
+    <main>
+      <section>
+        <div class="container contact-wrap">
+          <div class="info-card">
+            <h2>Hablemos</h2>
+            <p>
+              No se requiere pago ni reserva en línea para conversar con
+              nosotros: solo completa el formulario y un asesor te contactará
+              para confirmar fechas, precios y disponibilidad.
+            </p>
+            <ul class="info-list">
+              <li>Av. Amazonas y Espejo, Baños de Agua Santa, Tungurahua</li>
+              <li>info@aguasantaexpediciones.ec</li>
+              <li>+593 99 000 0000</li>
+              <li>Atención de 8:00 a 18:00, todos los días</li>
+            </ul>
+          </div>
+
+          <form class="reserva" action="#" method="post">
+            <fieldset>
+              <legend>Datos de contacto</legend>
+
+              <div class="form-row">
+                <div class="field">
+                  <label for="nombre">Nombre completo</label>
+                  <input
+                    type="text"
+                    id="nombre"
+                    name="nombre"
+                    placeholder="Tu nombre y apellido"
+                    required
+                  />
+                </div>
+                <div class="field">
+                  <label for="correo">Correo electrónico</label>
+                  <input
+                    type="email"
+                    id="correo"
+                    name="correo"
+                    placeholder="tucorreo@ejemplo.com"
+                    required
+                  />
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="field">
+                  <label for="telefono">Teléfono</label>
+                  <input
+                    type="tel"
+                    id="telefono"
+                    name="telefono"
+                    placeholder="09XXXXXXXX"
+                    pattern="[0-9+ ]{7,15}"
+                    required
+                  />
+                </div>
+                <div class="field">
+                  <label for="personas">Número de personas</label>
+                  <input
+                    type="number"
+                    id="personas"
+                    name="personas"
+                    min="1"
+                    max="30"
+                    value="2"
+                    required
+                  />
+                </div>
+              </div>
+            </fieldset>
+
+            <fieldset>
+              <legend>Detalles del viaje</legend>
+
+              <div class="form-row">
+                <div class="field">
+                  <label for="destino">Destino o actividad</label>
+                  <select id="destino" name="destino" required>
+                    <option value="">Selecciona una opción</option>
+                    <option value="pailon-del-diablo">Pailón del Diablo</option>
+                    <option value="casa-del-arbol">Casa del Árbol</option>
+                    <option value="termas-de-la-virgen">
+                      Termas de la Virgen
+                    </option>
+                    <option value="ruta-de-las-cascadas">
+                      Ruta de las Cascadas
+                    </option>
+                    <option value="aventura-extrema">Aventura extrema</option>
+                    <option value="fin-de-semana">
+                      Paquete de fin de semana
+                    </option>
+                    <option value="otro">Otro / no estoy seguro</option>
+                  </select>
+                </div>
+                <div class="field">
+                  <label for="fecha">Fecha estimada</label>
+                  <input type="date" id="fecha" name="fecha" required />
+                </div>
+              </div>
+
+              <div class="field">
+                <label for="tipo-servicio">Tipo de servicio</label>
+                <select id="tipo-servicio" name="tipo-servicio" required>
+                  <option value="">Selecciona una opción</option>
+                  <option value="tour-medio-dia">Tour de medio día</option>
+                  <option value="tour-dia-completo">
+                    Tour de día completo
+                  </option>
+                  <option value="paquete-fin-de-semana">
+                    Paquete de fin de semana
+                  </option>
+                  <option value="servicio-personalizado">
+                    Servicio personalizado
+                  </option>
+                </select>
+              </div>
+            </fieldset>
+
+            <fieldset>
+              <legend>Mensaje</legend>
+              <div class="field">
+                <label for="mensaje"
+                  >Cuéntanos más
+                  <span class="hint"
+                    >(preferencias, alergias, fechas alternativas)</span
+                  ></label
+                >
+                <textarea
+                  id="mensaje"
+                  name="mensaje"
+                  placeholder="Escribe aquí tu mensaje"
+                  required
+                ></textarea>
+              </div>
+            </fieldset>
+
+            <p class="form-note">
+              Al enviar este formulario aceptas que te contactemos por correo o
+              teléfono para coordinar tu reserva. No se procesan pagos desde
+              este sitio.
+            </p>
+
+            <button type="submit" class="btn btn-primary">
+              Enviar solicitud
+            </button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <h4>Agua Santa Expediciones</h4>
+          <p>
+            Agencia de turismo local especializada en Baños de Agua Santa,
+            Tungurahua.
+          </p>
+        </div>
+        <div>
+          <h4>Explorar</h4>
+          <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="destinos.html">Lugares turísticos</a></li>
+            <li><a href="servicios.html">Servicios y paquetes</a></li>
+            <li><a href="nosotros.html">Nosotros</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contacto</h4>
+          <ul>
+            <li>Av. Amazonas y Espejo, Baños de Agua Santa</li>
+            <li>Tungurahua, Ecuador</li>
+            <li>info@aguasantaexpediciones.ec</li>
+            <li>+593 99 100 2200</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p style="margin: 0">
+          © 2026 Agua Santa Expediciones — Proyecto Universitario UTEQ.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
